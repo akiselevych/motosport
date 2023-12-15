@@ -1,0 +1,85 @@
+@import "@/styles/variables.scss";
+
+.container {
+  @include pageWrapper;
+  z-index: 99999;
+
+  a {
+    z-index: 99999;
+  }
+}
+.content {
+  @include pageContent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  position: absolute;
+  color: #fff;
+  z-index: 99999;
+  a {
+    color: #fff;
+  }
+  @media (max-width: 1024px) {
+  }
+}
+.logoLink {
+  height: 17px;
+  width: auto;
+  z-index: 99999;
+  img {
+    height: 17px;
+    width: auto;
+  }
+  @media (max-width: 542px) {
+    height: 14px;
+    img {
+      height: 14px;
+    }
+  }
+}
+.DesctopMenuContainer {
+  z-index: 99999;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+.mopbileMenuToggler {
+  display: none;
+  z-index: 99999;
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
+.langPicker {
+  z-index: 99999;
+  position: relative;
+  display: block;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+.currLocale {
+  z-index: 99999;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+.dropdown {
+  z-index: 99999;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+}
+.localeItem {
+  z-index: 99999;
+  color: #fff;
+  cursor: pointer;
+}

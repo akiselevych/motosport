@@ -1,0 +1,15 @@
+@import "@/styles/variables.scss";
+
+.imagesList {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 37px 12px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.btn {
+    align-self: center;
+}

@@ -1,0 +1,49 @@
+{
+    "name": "motosport-website",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev -p 7778",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@hookform/resolvers": "^3.3.2",
+        "@reduxjs/toolkit": "^1.9.7",
+        "@splidejs/react-splide": "^0.7.12",
+        "accept-language": "^3.0.18",
+        "axios": "^1.6.2",
+        "classnames": "^2.3.2",
+        "framer-motion": "^10.16.16",
+        "hamburger-react": "^2.5.0",
+        "i18next": "^23.7.7",
+        "i18next-browser-languagedetector": "^7.2.0",
+        "i18next-resources-to-backend": "^1.2.0",
+        "next": "14.0.3",
+        "next-redux-wrapper": "^8.1.0",
+        "node": "^21.2.0",
+        "query-string": "^8.1.0",
+        "react": "^18",
+        "react-cookie": "^6.1.1",
+        "react-dnd": "^16.0.1",
+        "react-dnd-html5-backend": "^16.0.1",
+        "react-dom": "^18",
+        "react-hook-form": "^7.48.2",
+        "react-i18next": "^13.5.0",
+        "react-international-phone": "^4.0.4",
+        "react-swipeable": "^7.0.1",
+        "sass": "^1.69.5",
+        "sharp": "^0.33.0",
+        "sonner": "^1.2.4",
+        "uuid": "^9.0.1",
+        "zod": "^3.22.4"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "@types/uuid": "^9.0.7",
+        "typescript": "^5"
+    }
+}

@@ -1,0 +1,44 @@
+@import "@/styles/variables";
+
+.container {
+    @include pageWrapper;
+    overflow: hidden;
+    position: relative;
+    margin-top: 64px;
+    margin-bottom: 125px;
+    @media (max-width: $tabletSize) {
+        margin-top: 32px;
+        margin-bottom: 64px;
+    }
+}
+.content {
+    @include pageContent;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    margin-bottom: 36px;
+    text-align: center;
+}
+.imagesList {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 37px 12px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.shadow {
+}
+.image {
+    flex: 1 1 auto;
+    min-width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.btn {
+    align-self: center;
+}

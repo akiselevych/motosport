@@ -1,0 +1,105 @@
+@import "@/styles/variables";
+
+.container {
+    @include pageWrapper;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 125px;
+}
+
+.content {
+    @include pageContent;
+    overflow: visible;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.blockTitle {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.DesctpopSliderWrapper {
+    width: 100%;
+    display: block;
+    overflow: visible;
+    @media (max-width: $tabletSize) {
+        display: none;
+    }
+}
+
+.slide {
+    padding: 0 11px;
+    min-height: 287px;
+    box-sizing: border-box;
+    .slideContent {
+        height: 100%;
+    }
+}
+.slideContent {
+    max-width: 100%;
+    position: relative;
+    padding: 40px 24px 117px 24px;
+    border-radius: 5px 5px 60px 5px;
+    min-height: 287px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover !important;
+}
+
+.slideContent {
+    position: relative;
+    z-index: 9999999 !important;
+    background-size: cover;
+}
+.slideContent::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        0deg,
+        rgba(81, 0, 0, 0.7) 0%,
+        rgba(81, 0, 0, 0.7) 100%
+    );
+    z-index: 99;
+    mix-blend-mode: multiply;
+}
+
+.title {
+    margin-bottom: 12px;
+}
+.divider {
+    display: inline-block;
+    height: 1px;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.text,
+.divider,
+.title {
+    position: relative;
+    z-index: 4;
+    z-index: 9999999 !important;
+}
+.mobileWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    max-width: 356px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-self: center;
+    display: none;
+    padding: 0 8px;
+    @media (max-width: $tabletSize) {
+        display: flex;
+    }
+}
+.btn {
+    align-self: center;
+}

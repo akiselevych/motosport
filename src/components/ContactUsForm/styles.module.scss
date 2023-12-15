@@ -1,0 +1,71 @@
+@import "@/styles/variables";
+
+.form {
+  &ItemsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+
+    @media (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .formItem {
+      width: 50%;
+
+      &Input {
+        width: 100%;
+      }
+
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &Inner {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  &Item {
+    position: relative;
+
+    &Input {
+      width: auto;
+
+      @media (max-width: 1024px) {
+        width: 100%;
+        box-sizing: border-box;
+
+        @media (max-width: 1024px) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  &Footer {
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &Partner {
+      justify-content: center;
+    }
+
+    @media (max-width: $mobileSize) {
+      margin-top: 37px;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}
+
+.whiteLabel {
+  color: $white;
+}
